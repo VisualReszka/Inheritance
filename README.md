@@ -15,6 +15,17 @@ This project is part of the **Inheritance Exercise** from the Base Learn documen
 - **InheritanceSubmission Contract**:  
   Links deployed `Salesperson` and `EngineeringManager` contracts.
 
+## Contracts
+
+This project contains the following contracts:
+1. **Employee.sol**: Abstract base contract defining employee structure.
+2. **Salaried.sol**: Employee contract for salaried workers.
+3. **Hourly.sol**: Employee contract for hourly workers.
+4. **Manager.sol**: Adds manager functionality to an employee.
+5. **Salesperson.sol**: Inherits from `Hourly`.
+6. **EngineeringManager.sol**: Inherits from `Salaried` and `Manager`.
+7. **InheritanceSubmission.sol**: Combines `Salesperson` and `EngineeringManager` deployments.
+
 ## Setup
 
 **Framework**: Foundry
@@ -33,3 +44,4 @@ This project is for educational purposes as part of the Base Learn course.
 ## Progress
 
 Badges Earned: 7 out of 13
+
