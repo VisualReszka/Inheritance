@@ -1,66 +1,35 @@
-## Foundry
+# Inheritance
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Overview
 
-Foundry consists of:
+This project is part of the **Inheritance Exercise** from the Base Learn documentation. It demonstrates Solidity inheritance concepts using **Foundry**.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Features
 
-## Documentation
+- **Salesperson Contract**:  
+  Implements an employee paid hourly with specific details like `idNumber`, `managerId`, and `hourlyRate`.
 
-https://book.getfoundry.sh/
+- **EngineeringManager Contract**:  
+  Combines salaried employee features with managerial functionalities.
 
-## Usage
+- **InheritanceSubmission Contract**:  
+  Links deployed `Salesperson` and `EngineeringManager` contracts.
 
-### Build
+## Setup
 
-```shell
-$ forge build
-```
+**Framework**: Foundry
 
-### Test
+**Contracts**:  
+- Salesperson.sol  
+- EngineeringManager.sol  
+- InheritanceSubmission.sol  
 
-```shell
-$ forge test
-```
+**Network**: Base Sepolia
 
-### Format
+## Notes
 
-```shell
-$ forge fmt
-```
+This project is for educational purposes as part of the Base Learn course.
 
-### Gas Snapshots
+## Progress
 
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Badges Earned: 7 out of 13
